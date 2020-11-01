@@ -158,7 +158,7 @@ private extension PythonLibrary {
     static var libraryPathExtensions = [""]
     static var librarySearchPaths = ["", "/usr/local/Frameworks/"]
     static var libraryVersionSeparator = "."
-    #elseif os(Linux)
+    #elseif os(Android) || os(Linux)
     static var libraryNames = ["libpython:", "libpython:m"]
     static var libraryPathExtensions = [".so"]
     static var librarySearchPaths = [""]
