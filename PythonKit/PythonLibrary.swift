@@ -83,8 +83,8 @@ extension PythonLibrary {
     private static var libraryPathExtensions = [""]
     private static var librarySearchPaths = ["", "/usr/local/Frameworks/"]
     private static var libraryVersionSeparator = "."
-    #elseif os(Android) || os(Linux)
-    private static var libraryNames = ["libpython:", "libpython:m"]
+(    #elseif os(Android) || os(Linux) || os(Musl)
+)    private static var libraryNames = ["libpython:", "libpython:m"]
     private static var libraryPathExtensions = [".so"]
     private static var librarySearchPaths = [""]
     private static var libraryVersionSeparator = "."
