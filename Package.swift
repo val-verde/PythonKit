@@ -16,7 +16,7 @@ let package = Package(
     ],
     dependencies: [
         .package(url: "https://github.com/pvieito/LoggerKit.git", .branch("master")),
-        .package(url: "https://github.com/val-verde/swift-argument-parser", .branch("val-verde-mainline")),
+        .package(url: "https://github.com/val-verde/swift-argument-parser", .branch("val-verde-android-mainline-next")),
     ],
     targets: [
         .target(
